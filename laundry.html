@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pilihan Layanan - Laundry Haq</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function pesanLayanan(layanan) {
+            const nomorWA = '62882022717370';
+            const pesan = `Saya ingin memesan layanan  
+            Nama               :
+            Alamat             :
+            NomorTelepon      :
+            jenis layananan    : ${layanan}`;
+            window.open(`https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`, '_blank');
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5fff5;
+        }
+        header {
+            background: #2E7D32;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .service-option {
+            margin: 15px 0;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            background: #e8f5e9;
+        }
+        .service-option button {
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px 0;
+            background: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tokoh Laundry Haq</h1>
+        <p>Layanan Laundry Terpercaya di Jalan Batara Bira Baddoka</p>
+    </header>
+    <div class="container mt-4">
+        <h2 class="text-center text-success">Form Pilihan Layanan</h2>
+        <div class="service-option">
+            <h4>Cuci Kering Lipat - Rp 20.000/kg</h4>
+            <button class="btn btn-success" onclick="pesanLayanan('Cuci Kering Lipat')">Pesan Sekarang</button>
+        </div>
+        <div class="service-option">
+            <h4>Cuci Kering Setrika - Rp 25.000/kg</h4>
+            <button class="btn btn-success" onclick="pesanLayanan('Cuci Kering Setrika')">Pesan Sekarang</button>
+        </div>
+        <div class="service-option">
+            <h4>Cuci Saja - Rp 15.000/kg</h4>
+            <button class="btn btn-success" onclick="pesanLayanan('Cuci Saja')">Pesan Sekarang</button>
+        </div>
+        <div class="service-option">
+            <h4>Cuci Ekspres - Rp 30.000/kg</h4>
+            <button class="btn btn-success" onclick="pesanLayanan('Cuci Ekspres')">Pesan Sekarang</button>
+        </div>
+        <div class="text-center mt-4">
+            <p><strong>Alamat:</strong> Jalan Batara Bira Baddoka</p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/62882022717370" class="text-success">0882022717370</a></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Laundry Haq. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>
