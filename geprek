@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayam Geprek Mantap - Pesan Sekarang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #ff6600;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .menu-item {
+            background-color: white;
+            border: 2px solid #ddd;
+            padding: 15px;
+            width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item h3 {
+            margin-bottom: 10px;
+        }
+
+        .menu-item p {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .order-button {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .order-button:hover {
+            background-color: #cc5200;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ayam Geprek Mantap</h1>
+        <p>Nikmati kelezatan Ayam Geprek terbaik!</p>
+    </header>
+    
+    <main>
+        <h2>Menu Pilihan</h2>
+        <section class="menu">
+            <div class="menu-item">
+                <h3>Ayam Geprek Original</h3>
+                <p>Rp 20.000/porsi</p>
+                <a href="#" class="order-button">Pesan Sekarang</a>
+            </div>
+            <div class="menu-item">
+                <h3>Ayam Geprek Sambal Ijo</h3>
+                <p>Rp 22.000/porsi</p>
+                <a href="#" class="order-button">Pesan Sekarang</a>
+            </div>
+            <div class="menu-item">
+                <h3>Ayam Geprek Sambal Matah</h3>
+                <p>Rp 30.000/porsi</p>
+                <a href="#" class="order-button">Pesan Sekarang</a>
+            </div>
+            <div class="menu-item">
+                <h3>Ayam Geprek Keju</h3>
+                <p>Rp 25.000/porsi</p>
+                <a href="#" class="order-button">Pesan Sekarang</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Alamat: Perintis Kemerdekaan 7</p>
+        <p>WhatsApp: 082346743690</p>
+        <p>&copy; 2025 Ayam Geprek Mantap. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>
